@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #ffa710;
+  --tan: #dfc08a;
+  --red: #c72824; /* #e10012; */
+  --green: #2d3a1f;
+
+  --header-font: "League Gothic", sans-serif;
+  --body-font: "Kanit", sans-serif;
+
+  --drop-shadow: 5px 5px 0px var(--green);
+
+  cursor: url("../img/cursor.cur"), auto;
+}
+
+body {
+  color: var(--green);
+  background-color: var(--bg-color);
+  background-image: url(http://www.transparenttextures.com/patterns/textured-paper.png);
+  font-family: var(--body-font);
+  font-size: 20px;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+p {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+a {
+  color: var(--red);
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0 0;
+}
+
+/* slider styles */
+
+/* position the left/right buttons */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+  top: 50%;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+/* change the icon */
+.slick-next:before {
+  content: "❯";
+  right: -77px;
+}
+
+.slick-prev:before {
+  content: "❮";
+  left: -27px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d3a1f;
+  color: #dfc08a;
+  opacity: 1;
+  font-family: sans-serif;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: white;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots {
+  bottom: -23px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--red);
+  opacity: 1;
+}
+
+.slick-dots li {
+  background: var(--tan);
+  border-radius: 20px;
+}
+
+.slick-slide > div {
+  height: 400px;
+}

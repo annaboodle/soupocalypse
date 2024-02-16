@@ -1,0 +1,395 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.paragraph {
+  font-size: 20px;
+}
+
+/* top section with title and godzilla */
+.section1 {
+  width: 100%;
+  position: relative;
+}
+
+/* red bg in top section */
+.section1:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -114px;
+  width: 100%;
+  height: 100%;
+  background-color: #c40000; /* #c10000; */
+  width: 100%;
+}
+
+/* paper texture over the red section */
+.section1:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -114px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url(http://www.transparenttextures.com/patterns/textured-paper.png);
+  background-position: 50% 0;
+}
+
+.heroImage {
+  position: relative;
+  z-index: 1;
+}
+
+.section1__inner {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.section1__inner,
+.section2 {
+  width: 100%;
+
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.headerBlockNew {
+  color: var(--tan);
+  font-family: var(--header-font);
+  width: 100%;
+  margin: 30px 20px 0px;
+  text-shadow: var(--drop-shadow);
+  position: relative;
+}
+
+.topCurvedHeader {
+  font-size: 80px;
+  position: relative;
+  bottom: -24px;
+}
+
+.bigCurvedHeader {
+  font-size: 180px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.bottomCurvedHeader {
+  font-size: 60px;
+  position: relative;
+  bottom: 109px;
+}
+
+@media only screen and (max-width: 870px) {
+  .topCurvedHeader {
+    font-size: 61px;
+    bottom: -13px;
+  }
+  .bigCurvedHeader {
+    font-size: 110px;
+  }
+  .bottomCurvedHeader {
+    font-size: 41px;
+    bottom: 62px;
+  }
+  .headerBlockNew {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .topCurvedHeader {
+    font-size: 40px;
+    bottom: -8px;
+  }
+  .bigCurvedHeader {
+    font-size: 70px;
+  }
+  .bottomCurvedHeader {
+    font-size: 30px;
+    bottom: 39px;
+  }
+  .headerBlockNew {
+    margin-bottom: 25px;
+  }
+
+  .section1:before,
+  .section1:after {
+    padding-bottom: 40px;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .section1__inner {
+    padding: 0 0;
+  }
+}
+
+.headerBlock__title {
+  font-size: 183px;
+  text-transform: uppercase;
+  line-height: 141px;
+
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 850px) {
+  .headerBlock__title {
+    font-size: 150px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .headerBlock__title {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .headerBlock__title {
+    font-size: 65px;
+  }
+}
+
+.headerBlock__topText,
+.headerBlock__bottomText {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.heroImageWrap {
+  max-width: 550px;
+  width: 100%;
+}
+
+.heroImage {
+  height: auto;
+  max-width: 100%;
+}
+
+/* section headers with the fancy star decorations */
+.header {
+  color: var(--tan);
+  text-transform: uppercase;
+  text-shadow: var(--drop-shadow);
+  background: var(--red);
+  padding: 10px 20px;
+  font-family: var(--header-font);
+  font-size: 75px;
+  display: block;
+  text-align: center;
+  margin: 80px auto 25px;
+  font-weight: 400;
+}
+
+.header:before,
+.header:after {
+  content: "";
+  background: url(../img/star.svg);
+  display: inline-block;
+  height: 46px;
+  width: 48px;
+  margin: 0 20px 3px;
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .header {
+    font-size: 45px;
+    width: 100%;
+    position: relative;
+    padding: 10px 70px;
+
+    width: calc(100% + 40px);
+    left: -20px;
+
+    margin-top: 40px;
+  }
+
+  .header:before,
+  .header:after {
+    display: block;
+    position: absolute;
+    top: calc(50% - 24px);
+    margin: 0 0 3px;
+  }
+
+  .header:before {
+    left: 13px;
+  }
+
+  .header:after {
+    right: 13px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+/* container for all participant items */
+.participantList {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 45px 0 0;
+}
+
+/* each participant item */
+.participant__restaurantInfo {
+  text-align: center;
+  padding: 45px 0 0;
+}
+
+/* each individual restaurant + soup card */
+.participant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.333% - 20px);
+  position: relative;
+  padding: 0 0 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .participant {
+    width: calc(50% - 15px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .participant {
+    width: 100%;
+  }
+
+  .participant__restaurantInfo {
+    padding-top: 35px;
+  }
+}
+
+.participant__restaurantName {
+  font-family: var(--header-font);
+  font-size: 40px;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.participant__restaurantInfoItem {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+}
+
+.participant__logoWrapper {
+  width: 100px;
+  height: 100px;
+  background: white;
+  padding: 20px;
+  border-radius: 100px;
+  box-shadow: var(--drop-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -18px;
+  left: -14px;
+}
+
+.participant__logo {
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+  height: auto;
+}
+
+.participant__soupsWrapper {
+  display: flex;
+  max-width: 100%;
+}
+
+/* SOUP CARD */
+.participant__soup {
+  display: flex;
+  flex-direction: column;
+  border-width: 15px;
+  border-color: var(--green);
+  border-style: double;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.participant__soupPic {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.participant__soupLabel {
+  font-size: 22px;
+  background: var(--green);
+  color: var(--tan);
+  padding: 8px 16px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider__nextArrow {
+  right: 15px;
+  top: 364px;
+}
+
+/* Responsive container for the map */
+.mapIframeWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Aspect ratio (9:16) */
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* Responsive iframe within the container */
+.mapIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.footer {
+  font-size: 16px;
+  margin: 10px auto 20px;
+}
