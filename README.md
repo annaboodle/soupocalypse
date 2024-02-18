@@ -20,6 +20,25 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## To deploy
+
+```bash
+git checkout main
+
+npm run build
+
+add .
+
+commit -m '[your message]'
+```
+
+The next.js GitHub Action should run automatically and deploy the changes.
+
+Helpful resources:
+
+- https://medium.com/frontendweb/how-to-deploy-a-nextjs-app-to-github-pages-1de4f6ed762e
+- https://github.com/vercel/next.js/discussions/58790
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
