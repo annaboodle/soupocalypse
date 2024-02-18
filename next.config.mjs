@@ -3,10 +3,12 @@
 
 const nextConfig = {
   output: "export",
-  // basePath: "/soupocalypse",
-  // assetPrefix: "/soupocalypse/",
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
+
+  // these need to be commented out for the dev build to work UGH
+  basePath: "/soupocalypse",
+  assetPrefix: "/soupocalypse/",
   images: { unoptimized: true },
 };
 
