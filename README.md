@@ -29,12 +29,14 @@ npm run build
 
 add .
 
-commit -m '[your message]'
+git commit -m '[your message]'
+
+git push
 ```
 
 The next.js GitHub Action should run automatically and deploy the changes.
 
-Helpful resources:
+## Helpful resources:
 
 - https://medium.com/frontendweb/how-to-deploy-a-nextjs-app-to-github-pages-1de4f6ed762e
 - https://github.com/vercel/next.js/discussions/58790
