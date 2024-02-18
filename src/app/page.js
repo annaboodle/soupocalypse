@@ -10,6 +10,9 @@ import styles from "./page.module.css";
 
 // Import images
 import promoImage from "../../public/img/soupocalypse-promo.jpg";
+// import soupocalypseHeader from "../../public/img/soupocalypse.png";
+import soupocalypseHeader from "../../public/img/soupocalypse-header.png";
+
 import soup1 from "../../public/img/godzilla/soup1.png";
 import soup2 from "../../public/img/godzilla/soup2.png";
 import soup3 from "../../public/img/godzilla/soup3.png";
@@ -161,7 +164,16 @@ export default function Home() {
       {/* red top section */}
       <div className={styles.section1}>
         <div className={styles.section1__inner}>
-          <div className={styles.headerBlockNew}>
+          <div className={styles.headerImageWrap}>
+            <Image
+              src={soupocalypseHeader}
+              alt={"Soupocalypse"}
+              className={styles.headerImage}
+            />
+          </div>
+
+          {/* START: Testing different header variations */}
+          {/* <div className={styles.headerBlockNew}>
             <CircletypeText
               text="Fremont"
               className={styles.topCurvedHeader}
@@ -180,6 +192,45 @@ export default function Home() {
               radius={500}
             />
           </div>
+
+          <div className={styles.svgZone}>
+            <p className={styles.svgZone__fremont}>Fremont</p>
+
+            <svg
+              viewBox="0 -15 440 160"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              className={styles.svgForCurvedText__soupocalypse}
+            >
+              <path
+                id="curve"
+                d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
+                className={styles.svgForCurvedText__path}
+              />
+              <text width="500">
+                <textPath xlinkHref="#curve">Soupocalypse</textPath>
+              </text>
+            </svg>
+
+            <p className={styles.svgZone__fremont}>Every year, forever</p>
+
+            <svg
+              viewBox="0 -10 440 160"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              className={styles.svgForCurvedText__dates}
+            >
+              <path
+                id="curve"
+                d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
+                className={styles.svgForCurvedText__path}
+              />
+              <text width="500">
+                <textPath xlinkHref="#curve">Every year, forever</textPath>
+              </text>
+            </svg>
+          </div> */}
+          {/* END: Testing different header variations */}
 
           <div className={styles.heroImageWrap}>
             <Image

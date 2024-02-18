@@ -41,6 +41,7 @@
   opacity: 0.2;
   background-image: url(http://www.transparenttextures.com/patterns/textured-paper.png);
   background-position: 50% 0;
+  z-index: 2;
 }
 
 .heroImage {
@@ -79,7 +80,68 @@
   position: relative;
 }
 
-.topCurvedHeader {
+/* trying out the svg method for curved text */
+/* .svgZone {
+  width: 100%;
+  position: relative;
+}
+
+.svgForCurvedText__path {
+  fill: transparent;
+}
+
+.svgForCurvedText__soupocalypse {
+  z-index: 1;
+  fill: var(--tan);
+  text-shadow: var(--drop-shadow);
+  font-family: var(--header-font);
+  text-transform: uppercase;
+  font-size: 90px;
+  letter-spacing: -2.5px;
+  rotate: 8.5deg;
+}
+
+.svgForCurvedText__dates {
+  fill: var(--tan);
+  text-shadow: var(--drop-shadow);
+  font-family: var(--header-font);
+  letter-spacing: -1px;
+  position: relative;
+  font-size: 32px;
+  rotate: 37deg;
+  left: 21.5%;
+  margin-top: -198px;
+}
+
+.svgZone__fremont {
+  color: var(--tan);
+  text-shadow: var(--drop-shadow);
+  font-family: var(--header-font);
+  text-align: center;
+  font-size: 94px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 750px) {
+  .svgZone__fremont {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .svgZone__fremont {
+    font-size: 50px;
+  }
+} */
+/* END trying out the svg method for curved text */
+
+/* .svgZone__dates {
+  font-size: 40px;
+} */
+
+/* not needed if we go with svg route */
+/* .topCurvedHeader {
   font-size: 80px;
   position: relative;
   bottom: -24px;
@@ -137,12 +199,6 @@
   }
 }
 
-@media only screen and (max-width: 765px) {
-  .section1__inner {
-    padding: 0 0;
-  }
-}
-
 .headerBlock__title {
   font-size: 183px;
   text-transform: uppercase;
@@ -174,16 +230,31 @@
 .headerBlock__bottomText {
   font-size: 50px;
   font-weight: 400;
+} */
+/* END: not needed if we go with svg route */
+
+@media only screen and (max-width: 765px) {
+  .section1__inner {
+    padding: 0 0;
+  }
 }
 
 .heroImageWrap {
   max-width: 550px;
   width: 100%;
+  z-index: 3;
 }
 
-.heroImage {
+.heroImage,
+.headerImage {
   height: auto;
   max-width: 100%;
+}
+
+.headerImageWrap {
+  width: 100%;
+  z-index: 1;
+  padding: 70px 20px;
 }
 
 /* section headers with the fancy star decorations */

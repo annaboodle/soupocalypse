@@ -6,10 +6,12 @@ const nextConfig = {
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
 
-  // these need to be commented out for the dev build to work UGH
+  // when building for PROD, comment out:
+  // images: { unoptimized: true },
+
+  // when DEVELOPING and running locally, comment out:
   basePath: "/soupocalypse",
   assetPrefix: "/soupocalypse/",
-  images: { unoptimized: true },
 };
 
 export default nextConfig;
