@@ -204,7 +204,7 @@
 .header:before,
 .header:after {
   content: "";
-  background: url(../img/star.svg);
+  background: url(../../public/img/star.svg);
   display: inline-block;
   height: 46px;
   width: 48px;

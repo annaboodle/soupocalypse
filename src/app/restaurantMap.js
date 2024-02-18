@@ -1,41 +1,41 @@
 // restaurant logos
-import mischiefLogo from "../img/logos/mischief.png";
-import dreamlandLogo from "../img/logos/dreamland.png";
-import triangleLogo from "../img/logos/triangle.png";
-import swelLogo from "../img/logos/swel.png";
-import soulLogo from "../img/logos/soul.jpeg";
-import shawnLogo from "../img/logos/shawn.png";
-import redStarLogo from "../img/logos/red-star.png";
-import pecadoLogo from "../img/logos/pecado.png";
-import paseoLogo from "../img/logos/paseo.webp";
-import localTideLogo from "../img/logos/local-tide.png";
-import kaosamaiLogo from "../img/logos/kaosamai.jpeg";
-import georgeLogo from "../img/logos/george.jpeg";
-import elCaminoLogo from "../img/logos/ElCamino.jpeg";
+import mischiefLogo from "../../public/img/logos/mischief.png";
+import dreamlandLogo from "../../public/img/logos/dreamland.png";
+import triangleLogo from "../../public/img/logos/triangle.png";
+import swelLogo from "../../public/img/logos/swel.png";
+import soulLogo from "../../public/img/logos/soul.jpeg";
+import shawnLogo from "../../public/img/logos/shawn.png";
+import redStarLogo from "../../public/img/logos/red-star.png";
+import pecadoLogo from "../../public/img/logos/pecado.png";
+import paseoLogo from "../../public/img/logos/paseo.webp";
+import localTideLogo from "../../public/img/logos/local-tide.png";
+import kaosamaiLogo from "../../public/img/logos/kaosamai.jpeg";
+import georgeLogo from "../../public/img/logos/george.jpeg";
+import elCaminoLogo from "../../public/img/logos/ElCamino.jpeg";
 
 // soup photos
-import mischiefBisqueImg from "../img/mischief/bisque.jpeg";
-import mischiefMasalaImg from "../img/mischief/masala.jpeg";
+import mischiefBisqueImg from "../../public/img/mischief/bisque.jpeg";
+import mischiefMasalaImg from "../../public/img/mischief/masala.jpeg";
 
-import kaosamaiTomYumImg from "../img/kaosamai/tom-yum.webp";
-import kaosamaiWonTonImg from "../img/kaosamai/won-ton.webp";
-import kaosamaiTomKhaImg from "../img/kaosamai/tom-kha.webp";
-import kaosamaiDuckNoodleImg from "../img/kaosamai/duck-noodle.webp";
-import kaosamaiGuayTiowTomYumImg from "../img/kaosamai/guay-tiow-tom-yum.webp";
-import kaosamaiGuayTiowVegetarianImg from "../img/kaosamai/guay-tiow-vegetarian.webp";
+import kaosamaiTomYumImg from "../../public/img/kaosamai/tom-yum.webp";
+import kaosamaiWonTonImg from "../../public/img/kaosamai/won-ton.webp";
+import kaosamaiTomKhaImg from "../../public/img/kaosamai/tom-kha.webp";
+import kaosamaiDuckNoodleImg from "../../public/img/kaosamai/duck-noodle.webp";
+import kaosamaiGuayTiowTomYumImg from "../../public/img/kaosamai/guay-tiow-tom-yum.webp";
+import kaosamaiGuayTiowVegetarianImg from "../../public/img/kaosamai/guay-tiow-vegetarian.webp";
 
-import elCaminoPozoleVerdeImg from "../img/el-camino/Pozole+Verde.jpg";
-import elCaminoTortillaImg from "../img/el-camino/tortilla-soup.jpeg";
+import elCaminoPozoleVerdeImg from "../../public/img/el-camino/Pozole+Verde.jpg";
+import elCaminoTortillaImg from "../../public/img/el-camino/tortilla-soup.jpeg";
 
-import localTideClamChowderImg from "../img/local-tide/LT+Clam+Chowder.jpeg";
+import localTideClamChowderImg from "../../public/img/local-tide/LT+Clam+Chowder.jpeg";
 
-import shawnClamChowderImg from "../img/shawn/clam-chowder.jpeg";
+import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
 
-import redStarPozoleImg from "../img/red-star/pozole.jpeg";
+import redStarPozoleImg from "../../public/img/red-star/pozole.jpeg";
 
-import soulGumboImg from "../img/soul/gumbo.webp";
+import soulGumboImg from "../../public/img/soul/gumbo.webp";
 
-import pecadoTortillaImg from "../img/pecado/chicken-tortilla.jpeg";
+import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 
 export const restaurantAssets = {
   mischief: {

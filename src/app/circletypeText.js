@@ -11,7 +11,7 @@ function CircletypeText({ text, className, radius }) {
 
     // After Circletype effect is applied, set isLoaded to true
     setIsLoaded(true);
-  }, []);
+  }, [radius]);
 
   return (
     <div

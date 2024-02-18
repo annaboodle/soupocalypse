@@ -1,7 +1,7 @@
 :root {
   --bg-color: #ffa710;
   --tan: #dfc08a;
-  --red: #c72824; /* #e10012; */
+  --red: #c72824;
   --green: #2d3a1f;
 
   --header-font: "League Gothic", sans-serif;
@@ -9,13 +9,13 @@
 
   --drop-shadow: 5px 5px 0px var(--green);
 
-  cursor: url("../img/cursor.cur"), auto;
+  cursor: url("../../public/img/cursor.cur"), auto;
 }
 
 body {
   color: var(--green);
   background-color: var(--bg-color);
-  background-image: url(http://www.transparenttextures.com/patterns/textured-paper.png);
+  background-image: url("../../public/img/textured-paper.png");
   font-family: var(--body-font);
   font-size: 20px;
   margin: 0;
@@ -62,7 +62,7 @@ h1 {
 /* change the icon */
 .slick-next:before {
   content: "❯";
-  right: -77px;
+  right: calc(-96% + 9px);
 }
 
 .slick-prev:before {

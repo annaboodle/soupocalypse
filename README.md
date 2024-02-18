@@ -34,7 +34,7 @@ git commit -m '[your message]'
 git push
 ```
 
-The next.js GitHub Action should run automatically and deploy the changes.
+The next.js [GitHub Action](https://github.com/annaboodle/soupocalypse/actions) should run automatically and deploy the changes.
 
 ## Helpful resources:
 

@@ -9,16 +9,16 @@ import { restaurantAssets } from "./restaurantMap";
 import styles from "./page.module.css";
 
 // Import images
-import promoImage from "../img/soupocalypse-promo.jpg";
-import soup1 from "../img/godzilla/soup1.png";
-import soup2 from "../img/godzilla/soup2.png";
-import soup3 from "../img/godzilla/soup3.png";
-import soup4 from "../img/godzilla/soup4.png";
-import soup5 from "../img/godzilla/soup5.png";
-import soup6 from "../img/godzilla/soup6.png";
-import soup7 from "../img/godzilla/soup7.png";
-import soup8 from "../img/godzilla/soup8.png";
-import placeholderLogo from "../img/logos/placeholder-logo.png";
+import promoImage from "../../public/img/soupocalypse-promo.jpg";
+import soup1 from "../../public/img/godzilla/soup1.png";
+import soup2 from "../../public/img/godzilla/soup2.png";
+import soup3 from "../../public/img/godzilla/soup3.png";
+import soup4 from "../../public/img/godzilla/soup4.png";
+import soup5 from "../../public/img/godzilla/soup5.png";
+import soup6 from "../../public/img/godzilla/soup6.png";
+import soup7 from "../../public/img/godzilla/soup7.png";
+import soup8 from "../../public/img/godzilla/soup8.png";
+import placeholderLogo from "../../public/img/logos/placeholder-logo.png";
 
 export default function Home() {
   // Data returned from Google Sheet:
@@ -182,7 +182,11 @@ export default function Home() {
           </div>
 
           <div className={styles.heroImageWrap}>
-            <Image src={promoImage} className={styles.heroImage} />
+            <Image
+              src={promoImage}
+              alt={"Soupocalypse"}
+              className={styles.heroImage}
+            />
           </div>
         </div>
       </div>
