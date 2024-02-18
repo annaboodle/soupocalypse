@@ -27,7 +27,7 @@ git checkout main
 
 npm run build
 
-add .
+git add .
 
 git commit -m '[your message]'
 
