@@ -62,7 +62,7 @@ export default function Home() {
       updateData(MASTER_SHEET_DATA);
     }
 
-    // Array of taglines
+    // Pick a random tagline from the array of taglines
     const taglines = [
       "Get ur slurp on",
       "Bust out the spoons",
@@ -113,6 +113,17 @@ export default function Home() {
     ];
     const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
     updateTagline(randomTagline);
+
+    // Reload page when viewport size changes (to fix circletypetext not getting the right positioning)
+    function handleResize() {
+      window.location.reload(); // Reload the page when viewport size changes
+    }
+
+    window.addEventListener("resize", handleResize); // Add event listener for resize
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
+    };
   }, []); // Empty dependency array to run only once
 
   // Array of placeholder images for soup
