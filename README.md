@@ -6,21 +6,33 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you see the 404 page, check the next.config.mjs file. These lines need to be commented out for local development (but they will be necessary when deploying to GitHub Pages):
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  basePath: "/soupocalypse",
+  assetPrefix: "/soupocalypse/",
+  images: { unoptimized: true },
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+The main pages is located at `app/page.js`.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## To deploy
+## Deploy the app to GitHub Pages
+
+In the next.config.mjs file, make sure these lines are NOT commented out:
+
+```bash
+  basePath: "/soupocalypse",
+  assetPrefix: "/soupocalypse/",
+  images: { unoptimized: true },
+```
+
+Then build the app, commit and push changes:
 
 ```bash
 git checkout main
@@ -34,24 +46,17 @@ git commit -m '[your message]'
 git push
 ```
 
-The next.js [GitHub Action](https://github.com/annaboodle/soupocalypse/actions) should run automatically and deploy the changes.
+The next.js [GitHub Action](https://github.com/annaboodle/soupocalypse/actions) will run automatically and deploy the changes to the live site.
 
-## Helpful resources:
+## Helpful resources
 
-- https://medium.com/frontendweb/how-to-deploy-a-nextjs-app-to-github-pages-1de4f6ed762e
-- https://github.com/vercel/next.js/discussions/58790
+Deploying Next.js app to GitHub Pages:
 
-## Learn More
+- [How to deploy a Nextjs app to GitHub pages?](https://medium.com/frontendweb/how-to-deploy-a-nextjs-app-to-github-pages-1de4f6ed762e)
+- [Discussion that helped resolve build errors](https://github.com/vercel/next.js/discussions/58790)
 
-To learn more about Next.js, take a look at the following resources:
+Learning more about Next.js:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [the Next.js GitHub repository](https://github.com/vercel/next.js/)

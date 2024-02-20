@@ -2,11 +2,11 @@
 // const nextConfig = {};
 
 const nextConfig = {
-  output: "export",
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
 
   // when DEVELOPING and running locally, comment out:
+  output: "export",
   basePath: "/soupocalypse",
   assetPrefix: "/soupocalypse/",
   images: { unoptimized: true },

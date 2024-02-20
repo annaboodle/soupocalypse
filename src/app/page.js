@@ -11,7 +11,7 @@ import styles from "./page.module.css";
 // Import images
 import promoImage from "../../public/img/soupocalypse-promo.jpg";
 // import soupocalypseHeader from "../../public/img/soupocalypse.png";
-import soupocalypseHeader from "../../public/img/soupocalypse-header.png";
+// import soupocalypseHeader from "../../public/img/soupocalypse-header.png";
 
 import soup1 from "../../public/img/godzilla/soup1.png";
 import soup2 from "../../public/img/godzilla/soup2.png";
@@ -26,6 +26,7 @@ import placeholderLogo from "../../public/img/logos/placeholder-logo.png";
 export default function Home() {
   // Data returned from Google Sheet:
   const [data, updateData] = useState([]);
+  const [tagline, updateTagline] = useState([]);
 
   // Settings for slider that scrolls through soup items
   const settingsForSlider = {
@@ -60,6 +61,58 @@ export default function Home() {
       MASTER_SHEET_DATA = masterSheetData.data;
       updateData(MASTER_SHEET_DATA);
     }
+
+    // Array of taglines
+    const taglines = [
+      "Get ur slurp on",
+      "Bust out the spoons",
+      "Slurp slurp",
+      "Fend off the darkness",
+      "In the center of the soupiverse",
+      "You’ll never be the same",
+      "For the love of soup",
+      "Slurp down the street",
+      "Welcome to the slurp zone",
+      "Grab ya spoons",
+      "Gotta slurp 'em all",
+      "Savor every moment",
+      "Sip, slurp, savor",
+      "Warm bowls, happy souls",
+      "Dive into deliciousness",
+      "From broth to bliss",
+      "Let's get soupy",
+      "One spoonful at a time",
+      "Soup's on!",
+      "Soup, spice, and everything nice",
+      "Souper heroes unite",
+      "Who will be crowned best in broth?",
+      "Embrace the chaos",
+      "Every slurp tells a story",
+      "Soup, there it is!",
+      "Lick the ladle",
+      "Spoons optional",
+      "Pour some broth on me",
+      "Sweet broth o' mine",
+      "A gastronomic symphony",
+      "We will, we will broth you",
+      "Don't stop believin' in broth",
+      "Stew got a friend in me",
+      "Stewpidly delicious",
+      "Who let the broth out?",
+      "Bisque, bisque, baby",
+      "Broth it like it's hot",
+      "Bisque and shout",
+      "Bisque me up before you go-go",
+      "Sweet home Bisqueabama",
+      "Hot bowls, cool vibes",
+      "Stew you love me?",
+      "Soup dreams are made of these",
+      "I'll be there for stew",
+      "Hit me with your best stew",
+      "All you need is stew",
+    ];
+    const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
+    updateTagline(randomTagline);
   }, []); // Empty dependency array to run only once
 
   // Array of placeholder images for soup
@@ -164,16 +217,18 @@ export default function Home() {
       {/* red top section */}
       <div className={styles.section1}>
         <div className={styles.section1__inner}>
-          <div className={styles.headerImageWrap}>
+          {/* <h1 className={styles.headerImageWrap}>
             <Image
               src={soupocalypseHeader}
               alt={"Soupocalypse"}
               className={styles.headerImage}
             />
-          </div>
+          </h1> */}
+
+          {/* <p className={styles.headerDate}>Returning January 2025</p> */}
 
           {/* START: Testing different header variations */}
-          {/* <div className={styles.headerBlockNew}>
+          <div className={styles.headerBlockNew}>
             <CircletypeText
               text="Fremont"
               className={styles.topCurvedHeader}
@@ -186,13 +241,21 @@ export default function Home() {
                 radius={700}
               />
             </h1>
-            <CircletypeText
-              text="Every year, forever"
-              className={styles.bottomCurvedHeader}
-              radius={500}
-            />
+            {/* Render CircletypeText component only if tagline is available */}
+            {tagline.length > 1 && (
+              <CircletypeText
+                text={tagline}
+                className={styles.bottomCurvedHeader}
+                radius={500}
+              />
+            )}
           </div>
 
+          <h2 className={`${styles.header} ${styles.headerDate}`}>
+            Returning January 2025
+          </h2>
+
+          {/* 
           <div className={styles.svgZone}>
             <p className={styles.svgZone__fremont}>Fremont</p>
 
@@ -246,10 +309,10 @@ export default function Home() {
       <div className={styles.section2}>
         <h2 className={styles.header}>A neighborhood tradition</h2>
         <p className={styles.paragraph}>
-          During the pandemic in January, Soupocalypse was born. It gave the
-          Center of the Universe neighborhood a chance to escape their homes and
-          enjoy a warm bowl of soup while taking in the sights and sounds of the
-          Burke-Gilman Trail and the canal’s birds. The experience was so
+          During the pandemic in January 2021, Soupocalypse was born. It gave
+          the Center of the Universe neighborhood a chance to escape their homes
+          and enjoy a warm bowl of soup while taking in the sights and sounds of
+          the Burke-Gilman Trail and the canal’s birds. The experience was so
           enjoyable that now we celebrate soup every year.
         </p>
 
@@ -289,6 +352,10 @@ export default function Home() {
         </div>
 
         <h2 className={styles.header}>Godspeed super soupers</h2>
+
+        <p className={styles.paragraph}>
+          It's not the end of the world until we run out of soup!
+        </p>
       </div>
       <p className={styles.footer}>
         Made by <a href="https://annabethcarroll.com/">ABC</a> for the love of

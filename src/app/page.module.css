@@ -75,10 +75,23 @@
   color: var(--tan);
   font-family: var(--header-font);
   width: 100%;
-  margin: 30px 20px 0px;
+  margin: 50px 20px 0px;
   text-shadow: var(--drop-shadow);
   position: relative;
 }
+
+/* .headerDate {
+  z-index: 1;
+  color: var(--tan);
+  text-shadow: var(--drop-shadow);
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-family: var(--header-font);
+  font-size: 60px;
+  letter-spacing: 0.5px;
+} */
 
 /* trying out the svg method for curved text */
 /* .svgZone {
@@ -141,10 +154,12 @@
 } */
 
 /* not needed if we go with svg route */
-/* .topCurvedHeader {
+.topCurvedHeader {
   font-size: 80px;
-  position: relative;
-  bottom: -24px;
+  /* position: relative; */
+  /* bottom: -24px; */
+  margin-bottom: -25px;
+  margin-top: 0;
 }
 
 .bigCurvedHeader {
@@ -155,21 +170,26 @@
 
 .bottomCurvedHeader {
   font-size: 60px;
-  position: relative;
-  bottom: 109px;
+  margin-top: -110px;
+  margin-bottom: 70px;
+  /* position: relative;
+  bottom: 109px; */
 }
 
 @media only screen and (max-width: 870px) {
   .topCurvedHeader {
     font-size: 61px;
-    bottom: -13px;
+    margin-bottom: -12px;
+    /* bottom: -13px; */
   }
   .bigCurvedHeader {
     font-size: 110px;
   }
   .bottomCurvedHeader {
     font-size: 41px;
-    bottom: 62px;
+    margin-top: -64px;
+
+    /* bottom: 62px; */
   }
   .headerBlockNew {
     margin-bottom: 40px;
@@ -179,14 +199,14 @@
 @media only screen and (max-width: 540px) {
   .topCurvedHeader {
     font-size: 40px;
-    bottom: -8px;
+    margin-bottom: -6px;
   }
   .bigCurvedHeader {
     font-size: 70px;
   }
   .bottomCurvedHeader {
     font-size: 30px;
-    bottom: 39px;
+    margin-top: -41px;
   }
   .headerBlockNew {
     margin-bottom: 25px;
@@ -230,7 +250,7 @@
 .headerBlock__bottomText {
   font-size: 50px;
   font-weight: 400;
-} */
+}
 /* END: not needed if we go with svg route */
 
 @media only screen and (max-width: 765px) {
@@ -245,17 +265,17 @@
   z-index: 3;
 }
 
-.heroImage,
-.headerImage {
+/* .headerImage,  */
+.heroImage {
   height: auto;
   max-width: 100%;
 }
 
-.headerImageWrap {
+/* .headerImageWrap {
   width: 100%;
   z-index: 1;
-  padding: 70px 20px;
-}
+  padding: 60px 20px 20px;
+} */
 
 /* section headers with the fancy star decorations */
 .header {
@@ -291,7 +311,7 @@
 @media only screen and (max-width: 765px) {
   .header {
     font-size: 45px;
-    width: 100%;
+
     position: relative;
     padding: 10px 70px;
 
@@ -320,6 +340,15 @@
   .paragraph {
     font-size: 16px;
   }
+}
+
+.headerDate {
+  z-index: 1;
+  background: none;
+  width: 100%;
+  left: 0;
+  margin: 0 0 30px;
+  font-size: 55px;
 }
 
 /* container for all participant items */
