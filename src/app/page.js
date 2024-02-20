@@ -69,7 +69,7 @@ export default function Home() {
       "Slurp slurp",
       "Fend off the darkness",
       "In the center of the soupiverse",
-      "You’ll never be the same",
+      "You'll never be the same",
       "For the love of soup",
       "Slurp down the street",
       "Welcome to the slurp zone",
@@ -353,9 +353,9 @@ export default function Home() {
 
         <h2 className={styles.header}>Godspeed super soupers</h2>
 
-        <p className={styles.paragraph}>
-          It's not the end of the world until we run out of soup!
-        </p>
+        {/* <p className={styles.paragraph}>
+          It is not the end of the world until we run out of soup!
+        </p> */}
       </div>
       <p className={styles.footer}>
         Made by <a href="https://annabethcarroll.com/">ABC</a> for the love of
