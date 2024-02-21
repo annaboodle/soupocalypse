@@ -75,7 +75,7 @@
   color: var(--tan);
   font-family: var(--header-font);
   width: 100%;
-  margin: 50px 20px 0px;
+  margin: 30px 20px 60px;
   text-shadow: var(--drop-shadow);
   position: relative;
 }
@@ -153,11 +153,115 @@
   font-size: 40px;
 } */
 
-/* not needed if we go with svg route */
+/* delete if textfit doesn't work */
+.textfit {
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  /* font-size: 400px; */
+}
+
+/* start: new  responsive ish font size styles */
+
 .topCurvedHeader {
+  font-size: 10vw;
+  /* margin-bottom: -25px; */
+  margin-top: 0;
+}
+
+.headerTaglineCombo {
+  position: relative;
+}
+
+.bigCurvedHeader {
+  font-size: 20vw;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  /* margin: -2vw 0 -10vw; */
+}
+
+.bottomCurvedHeader {
+  font-size: 8vw;
+  /* position: absolute; */
+  /* top: calc(100%); */
+  /* left: 50%; */
+  /* margin-top: 30px; */
+  /* margin-bottom: 70px; */
+  /* margin-top: -8%; */
+  /* line-height: 0; */
+}
+
+@media screen and (min-width: 990px) {
+  .topCurvedHeader {
+    font-size: 99px;
+  }
+  .bigCurvedHeader {
+    font-size: 200px;
+    margin: -17px 0 -83px;
+  }
+  .bottomCurvedHeader {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .headerBlockNew {
+    /* padding: 0 40px; */
+  }
+  .bigCurvedHeader {
+    /* margin-bottom: -80px; */
+    line-height: 1;
+    /* margin: 0 20px; */
+  }
+
+  .bottomCurvedHeader {
+    line-height: 0;
+    margin-top: -5vw;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .bottomCurvedHeader {
+    margin-top: -4vw;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .bottomCurvedHeader {
+    margin-top: -3vw;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .bottomCurvedHeader {
+    margin-top: -2vw;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .bottomCurvedHeader {
+    margin-top: -1vw;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .topCurvedHeader {
+    margin-bottom: 4px;
+  }
+  .bottomCurvedHeader {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .bottomCurvedHeader {
+    margin-top: 1vw;
+  }
+}
+
+/* start: old non responsive font size styles */
+/* .topCurvedHeader {
   font-size: 80px;
-  /* position: relative; */
-  /* bottom: -24px; */
   margin-bottom: -25px;
   margin-top: 0;
 }
@@ -172,16 +276,12 @@
   font-size: 60px;
   margin-top: -110px;
   margin-bottom: 70px;
-  /* position: relative;
-  bottom: 109px; */
-  /* margin-bottom: 12px; */
-}
+} */
 
 @media only screen and (max-width: 870px) {
-  .topCurvedHeader {
+  /* .topCurvedHeader {
     font-size: 61px;
     margin-bottom: -12px;
-    /* bottom: -13px; */
   }
   .bigCurvedHeader {
     font-size: 110px;
@@ -190,16 +290,14 @@
     font-size: 41px;
     margin-top: -36px;
     margin-bottom: 12px;
-
-    /* bottom: 62px; */
-  }
+  } */
   .headerBlockNew {
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .topCurvedHeader {
+  /* .topCurvedHeader {
     font-size: 40px;
     margin-bottom: -6px;
   }
@@ -209,8 +307,7 @@
   .bottomCurvedHeader {
     font-size: 30px;
     margin-top: -12px;
-    /* margin-bottom: 12px; */
-  }
+  } */
   .headerBlockNew {
     margin-bottom: 25px;
   }
@@ -288,7 +385,8 @@
   background: var(--red);
   padding: 10px 20px;
   font-family: var(--header-font);
-  font-size: 75px;
+  /* font-size: 75px; */
+  font-size: 6.5vw;
   display: block;
   text-align: center;
   margin: 80px auto 25px;
@@ -310,9 +408,10 @@
     font-size: 65px;
   }
 
-  .header.headerDate {
+  /* .header.headerDate {
     font-size: 45px;
-  }
+
+  } */
 }
 
 @media only screen and (max-width: 765px) {
@@ -349,7 +448,13 @@
   }
 
   .header.headerDate {
-    font-size: 30px;
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .header.headerDate {
+    font-size: 8vw;
   }
 }
 
@@ -359,7 +464,8 @@
   width: 100%;
   left: 0;
   margin: 0 0 30px;
-  font-size: 55px;
+  /* font-size: 55px; */
+  font-size: 5vw;
 }
 
 /* container for all participant items */

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Textfit } from "react-textfit";
 import Image from "next/image";
 import Papa from "papaparse";
 import Slider from "react-slick";
@@ -238,28 +239,60 @@ export default function Home() {
 
           {/* <p className={styles.headerDate}>Returning January 2025</p> */}
 
-          {/* START: Testing different header variations */}
-          <div className={styles.headerBlockNew}>
-            <CircletypeText
+          {/* start test zone for text fit */}
+
+          {/* <Textfit className={styles.textfit} max={200} mode="single">
+            Fat headline!
+          </Textfit> */}
+
+          {/* <div className={styles.headerBlockNew}> */}
+          {/* <CircletypeText
               text="Fremont"
               className={styles.topCurvedHeader}
               radius={500}
-            />
-            <h1>
-              <CircletypeText
-                text="Soupocalypse"
-                className={styles.bigCurvedHeader}
-                radius={700}
-              />
-            </h1>
-            {/* Render CircletypeText component only if tagline is available */}
-            {tagline.length > 1 && (
+            /> */}
+          {/* <CircletypeText
+              text="Soupocalypse"
+              className={styles.bigCurvedHeader}
+              radius={1000}
+            /> */}
+
+          {/* Render CircletypeText component only if tagline is available */}
+          {/* {tagline.length > 1 && (
               <CircletypeText
                 text={tagline}
                 className={styles.bottomCurvedHeader}
                 radius={500}
               />
             )}
+          </div> */}
+
+          {/* end test zone for text fit */}
+
+          {/* START: Testing different header variations */}
+          <div className={styles.headerBlockNew}>
+            <CircletypeText
+              text="Fremont"
+              className={styles.topCurvedHeader}
+              radius={700}
+            />
+            <div className={styles.headerTaglineCombo}>
+              <h1>
+                <CircletypeText
+                  text="Soupocalypse"
+                  className={styles.bigCurvedHeader}
+                  radius={1000}
+                />
+              </h1>
+              {/* Render CircletypeText component only if tagline is available */}
+              {tagline.length > 1 && (
+                <CircletypeText
+                  text={tagline}
+                  className={styles.bottomCurvedHeader}
+                  radius={700}
+                />
+              )}
+            </div>
           </div>
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
