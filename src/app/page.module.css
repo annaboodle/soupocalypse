@@ -154,19 +154,19 @@
 } */
 
 /* delete if textfit doesn't work */
-.textfit {
+/* .textfit {
   z-index: 1;
   display: inline-block;
-  width: 100%;
-  /* font-size: 400px; */
-}
+  width: 100%; */
+/* font-size: 400px; */
+/* } */
 
 /* start: new  responsive ish font size styles */
-
+/* 
 .topCurvedHeader {
-  font-size: 10vw;
-  /* margin-bottom: -25px; */
-  margin-top: 0;
+  font-size: 10vw; */
+/* margin-bottom: -25px; */
+/* margin-top: 0;
 }
 
 .headerTaglineCombo {
@@ -176,20 +176,20 @@
 .bigCurvedHeader {
   font-size: 20vw;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
-  /* margin: -2vw 0 -10vw; */
-}
+  letter-spacing: -0.02em; */
+/* margin: -2vw 0 -10vw; */
+/* } */
 
-.bottomCurvedHeader {
-  font-size: 8vw;
-  /* position: absolute; */
-  /* top: calc(100%); */
-  /* left: 50%; */
-  /* margin-top: 30px; */
-  /* margin-bottom: 70px; */
-  /* margin-top: -8%; */
-  /* line-height: 0; */
-}
+/* .bottomCurvedHeader {
+  font-size: 8vw; */
+/* position: absolute; */
+/* top: calc(100%); */
+/* left: 50%; */
+/* margin-top: 30px; */
+/* margin-bottom: 70px; */
+/* margin-top: -8%; */
+/* line-height: 0; */
+/* }
 
 @media screen and (min-width: 990px) {
   .topCurvedHeader {
@@ -207,13 +207,13 @@
 @media screen and (max-width: 990px) {
   .headerBlockNew {
     /* padding: 0 40px; */
-  }
-  .bigCurvedHeader {
-    /* margin-bottom: -80px; */
-    line-height: 1;
-    /* margin: 0 20px; */
-  }
-
+/* } */
+/* .bigCurvedHeader { */
+/* margin-bottom: -80px; */
+/* line-height: 1; */
+/* margin: 0 20px; */
+/* } */
+/*
   .bottomCurvedHeader {
     line-height: 0;
     margin-top: -5vw;
@@ -257,10 +257,10 @@
   .bottomCurvedHeader {
     margin-top: 1vw;
   }
-}
+} */
 
 /* start: old non responsive font size styles */
-/* .topCurvedHeader {
+.topCurvedHeader {
   font-size: 80px;
   margin-bottom: -25px;
   margin-top: 0;
@@ -274,12 +274,12 @@
 
 .bottomCurvedHeader {
   font-size: 60px;
-  margin-top: -110px;
-  margin-bottom: 70px;
-} */
+  margin-top: -70px;
+  /* margin-bottom: 70px; */
+}
 
 @media only screen and (max-width: 870px) {
-  /* .topCurvedHeader {
+  .topCurvedHeader {
     font-size: 61px;
     margin-bottom: -12px;
   }
@@ -288,16 +288,16 @@
   }
   .bottomCurvedHeader {
     font-size: 41px;
-    margin-top: -36px;
-    margin-bottom: 12px;
-  } */
+    margin-top: -21px;
+    /* margin-bottom: 12px; */
+  }
   .headerBlockNew {
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  /* .topCurvedHeader {
+  .topCurvedHeader {
     font-size: 40px;
     margin-bottom: -6px;
   }
@@ -306,8 +306,9 @@
   }
   .bottomCurvedHeader {
     font-size: 30px;
-    margin-top: -12px;
-  } */
+    margin-top: -8px;
+    /* margin-top: -12px; */
+  }
   .headerBlockNew {
     margin-bottom: 25px;
   }
@@ -318,8 +319,8 @@
     top: 0;
   }
 }
-
-.headerBlock__title {
+/* do we need this */
+/* .headerBlock__title {
   font-size: 183px;
   text-transform: uppercase;
   line-height: 141px;
@@ -350,7 +351,7 @@
 .headerBlock__bottomText {
   font-size: 50px;
   font-weight: 400;
-}
+} */
 /* END: not needed if we go with svg route */
 
 @media only screen and (max-width: 765px) {
@@ -452,11 +453,11 @@
   }
 }
 
-@media screen and (max-width: 510px) {
+/* @media screen and (max-width: 510px) {
   .header.headerDate {
     font-size: 8vw;
   }
-}
+} */
 
 .headerDate {
   z-index: 1;

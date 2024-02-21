@@ -396,6 +396,10 @@ export default function Home() {
         </div>
 
         <h2 className={styles.header}>Godspeed super soupers</h2>
+
+        <p className={styles.paragraph}>
+          Remember: it&apos;s not the end of the world until we run out of soup!
+        </p>
       </div>
       <p className={styles.footer}>
         Made by <a href="https://annabethcarroll.com/">ABC</a> for the love of
