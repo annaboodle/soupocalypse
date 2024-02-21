@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Textfit } from "react-textfit";
+// import { Textfit } from "react-textfit";
 import Image from "next/image";
 import Papa from "papaparse";
 import Slider from "react-slick";
