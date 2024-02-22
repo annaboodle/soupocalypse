@@ -247,7 +247,7 @@ export default function Home() {
       {/* red top section */}
       <div className={styles.section1}>
         <div className={styles.section1__inner}>
-          {/* Render CircletypeText component only if tagline is available */}
+          {/* Render CircletypeText components only if tagline is available */}
           {tagline.length > 1 && (
             <div className={styles.headerBlockNew}>
               <CircletypeText
