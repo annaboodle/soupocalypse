@@ -73,12 +73,73 @@
   color: var(--tan);
   font-family: var(--header-font);
   width: 100%;
-  margin: 30px 20px 60px;
+  /* margin: 30px 20px 60px; */
   text-shadow: var(--drop-shadow);
   position: relative;
+
+  /* not needed if circletext works: */
+  text-align: center;
+  margin: 50px 20px 60px;
 }
 
-.topCurvedHeader {
+.topHeader {
+  font-size: 80px;
+  margin-bottom: -25px;
+  margin-top: 0;
+}
+
+.bigHeader {
+  font-size: 180px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.bottomHeader {
+  font-size: 60px;
+  margin-top: -23px;
+}
+
+@media only screen and (max-width: 870px) {
+  .topHeader {
+    font-size: 61px;
+    margin-bottom: -12px;
+  }
+  .bigHeader {
+    font-size: 110px;
+  }
+  .bottomHeader {
+    font-size: 41px;
+    margin-top: -7px;
+  }
+  .headerBlockNew {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .topHeader {
+    font-size: 40px;
+    margin-bottom: -6px;
+  }
+  .bigHeader {
+    font-size: 70px;
+  }
+  .bottomHeader {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+  .headerBlockNew {
+    margin-bottom: 25px;
+  }
+
+  .section1:before,
+  .section1:after {
+    padding-bottom: 40px;
+    top: 0;
+  }
+}
+
+/* .topCurvedHeader {
   font-size: 80px;
   margin-bottom: -25px;
   margin-top: 0;
@@ -93,8 +154,8 @@
 .bottomCurvedHeader {
   font-size: 60px;
   margin-top: -70px;
-}
-
+} */
+/* 
 @media only screen and (max-width: 870px) {
   .topCurvedHeader {
     font-size: 61px;
@@ -133,7 +194,7 @@
     padding-bottom: 40px;
     top: 0;
   }
-}
+} */
 
 @media only screen and (max-width: 765px) {
   .section1__inner {
@@ -160,7 +221,7 @@
   background: var(--red);
   padding: 10px 20px;
   font-family: var(--header-font);
-  font-size: 6.5vw;
+  font-size: 5.5vw;
   display: block;
   text-align: center;
   margin: 80px auto 25px;

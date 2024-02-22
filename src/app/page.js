@@ -248,7 +248,7 @@ export default function Home() {
       <div className={styles.section1}>
         <div className={styles.section1__inner}>
           {/* Render CircletypeText components only if tagline is available */}
-          <div className={styles.headerBlockNew}>
+          {/* <div className={styles.headerBlockNew}>
             {tagline.length > 1 && (
               <>
                 <CircletypeText
@@ -270,6 +270,12 @@ export default function Home() {
                 />
               </>
             )}
+          </div> */}
+
+          <div className={styles.headerBlockNew}>
+            <p className={styles.topHeader}>Fremont</p>
+            <h1 className={styles.bigHeader}>Soupocalypse</h1>
+            <p className={styles.bottomHeader}>{tagline}</p>
           </div>
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
