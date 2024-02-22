@@ -247,28 +247,28 @@ export default function Home() {
       {/* red top section */}
       <div className={styles.section1}>
         <div className={styles.section1__inner}>
-          <div className={styles.headerBlockNew}>
-            <CircletypeText
-              text="Fremont"
-              className={styles.topCurvedHeader}
-              radius={700}
-            />
-            <h1>
+          {/* Render CircletypeText component only if tagline is available */}
+          {tagline.length > 1 && (
+            <div className={styles.headerBlockNew}>
               <CircletypeText
-                text="Soupocalypse"
-                className={styles.bigCurvedHeader}
-                radius={1000}
+                text="Fremont"
+                className={styles.topCurvedHeader}
+                radius={700}
               />
-            </h1>
-            {/* Render CircletypeText component only if tagline is available */}
-            {tagline.length > 1 && (
+              <h1>
+                <CircletypeText
+                  text="Soupocalypse"
+                  className={styles.bigCurvedHeader}
+                  radius={1000}
+                />
+              </h1>
               <CircletypeText
                 text={tagline}
                 className={styles.bottomCurvedHeader}
                 radius={700}
               />
-            )}
-          </div>
+            </div>
+          )}
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
             Returning January 2025
