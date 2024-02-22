@@ -112,31 +112,31 @@ export default function Home() {
     updateTagline(randomTagline);
 
     // Define a debounce function to limit the rate of function invocation
-    function debounce(func, delay) {
-      let timeoutId;
-      return function (...args) {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          func.apply(this, args);
-        }, delay);
-      };
-    }
+    // function debounce(func, delay) {
+    //   let timeoutId;
+    //   return function (...args) {
+    //     clearTimeout(timeoutId);
+    //     timeoutId = setTimeout(() => {
+    //       func.apply(this, args);
+    //     }, delay);
+    //   };
+    // }
 
-    // Debounce the handleResize function to prevent rapid invocations during resizing
-    const debouncedResizeHandler = debounce(handleResize, 200);
+    // // Debounce the handleResize function to prevent rapid invocations during resizing
+    // const debouncedResizeHandler = debounce(handleResize, 200);
 
-    // Add event listener for resize with the debounced handler
-    window.addEventListener("resize", debouncedResizeHandler);
+    // // Add event listener for resize with the debounced handler
+    // window.addEventListener("resize", debouncedResizeHandler);
 
-    // Cleanup function to remove event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", debouncedResizeHandler);
-    };
+    // // Cleanup function to remove event listener on component unmount
+    // return () => {
+    //   window.removeEventListener("resize", debouncedResizeHandler);
+    // };
 
-    // Reload page when viewport size changes (to fix circletypetext not getting the right positioning)
-    function handleResize() {
-      window.location.reload(); // Reload the page when viewport size changes
-    }
+    // // Reload page when viewport size changes (to fix circletypetext not getting the right positioning)
+    // function handleResize() {
+    //   window.location.reload(); // Reload the page when viewport size changes
+    // }
 
     // window.addEventListener("resize", handleResize); // Add event listener for resize
 
