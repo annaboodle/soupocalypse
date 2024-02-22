@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-// import { Textfit } from "react-textfit";
 import Image from "next/image";
 import Papa from "papaparse";
 import Slider from "react-slick";
@@ -11,9 +10,6 @@ import styles from "./page.module.css";
 
 // Import images
 import promoImage from "../../public/img/soupocalypse-promo.jpg";
-// import soupocalypseHeader from "../../public/img/soupocalypse.png";
-// import soupocalypseHeader from "../../public/img/soupocalypse-header.png";
-
 import soup1 from "../../public/img/godzilla/soup1.png";
 import soup2 from "../../public/img/godzilla/soup2.png";
 import soup3 from "../../public/img/godzilla/soup3.png";
@@ -115,16 +111,38 @@ export default function Home() {
     const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
     updateTagline(randomTagline);
 
+    // Define a debounce function to limit the rate of function invocation
+    function debounce(func, delay) {
+      let timeoutId;
+      return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          func.apply(this, args);
+        }, delay);
+      };
+    }
+
+    // Debounce the handleResize function to prevent rapid invocations during resizing
+    const debouncedResizeHandler = debounce(handleResize, 200);
+
+    // Add event listener for resize with the debounced handler
+    window.addEventListener("resize", debouncedResizeHandler);
+
+    // Cleanup function to remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", debouncedResizeHandler);
+    };
+
     // Reload page when viewport size changes (to fix circletypetext not getting the right positioning)
     function handleResize() {
       window.location.reload(); // Reload the page when viewport size changes
     }
 
-    window.addEventListener("resize", handleResize); // Add event listener for resize
+    // window.addEventListener("resize", handleResize); // Add event listener for resize
 
-    return () => {
-      window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
-    };
+    // return () => {
+    //   window.removeEventListener("resize", handleResize); // Remove event listener on component unmount
+    // };
   }, []); // Empty dependency array to run only once
 
   // Array of placeholder images for soup
@@ -229,115 +247,32 @@ export default function Home() {
       {/* red top section */}
       <div className={styles.section1}>
         <div className={styles.section1__inner}>
-          {/* <h1 className={styles.headerImageWrap}>
-            <Image
-              src={soupocalypseHeader}
-              alt={"Soupocalypse"}
-              className={styles.headerImage}
-            />
-          </h1> */}
-
-          {/* <p className={styles.headerDate}>Returning January 2025</p> */}
-
-          {/* start test zone for text fit */}
-
-          {/* <Textfit className={styles.textfit} max={200} mode="single">
-            Fat headline!
-          </Textfit> */}
-
-          {/* <div className={styles.headerBlockNew}> */}
-          {/* <CircletypeText
-              text="Fremont"
-              className={styles.topCurvedHeader}
-              radius={500}
-            /> */}
-          {/* <CircletypeText
-              text="Soupocalypse"
-              className={styles.bigCurvedHeader}
-              radius={1000}
-            /> */}
-
-          {/* Render CircletypeText component only if tagline is available */}
-          {/* {tagline.length > 1 && (
-              <CircletypeText
-                text={tagline}
-                className={styles.bottomCurvedHeader}
-                radius={500}
-              />
-            )}
-          </div> */}
-
-          {/* end test zone for text fit */}
-
-          {/* START: Testing different header variations */}
           <div className={styles.headerBlockNew}>
             <CircletypeText
               text="Fremont"
               className={styles.topCurvedHeader}
               radius={700}
             />
-            <div className={styles.headerTaglineCombo}>
-              <h1>
-                <CircletypeText
-                  text="Soupocalypse"
-                  className={styles.bigCurvedHeader}
-                  radius={1000}
-                />
-              </h1>
-              {/* Render CircletypeText component only if tagline is available */}
-              {tagline.length > 1 && (
-                <CircletypeText
-                  text={tagline}
-                  className={styles.bottomCurvedHeader}
-                  radius={700}
-                />
-              )}
-            </div>
+            <h1>
+              <CircletypeText
+                text="Soupocalypse"
+                className={styles.bigCurvedHeader}
+                radius={1000}
+              />
+            </h1>
+            {/* Render CircletypeText component only if tagline is available */}
+            {tagline.length > 1 && (
+              <CircletypeText
+                text={tagline}
+                className={styles.bottomCurvedHeader}
+                radius={700}
+              />
+            )}
           </div>
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
             Returning January 2025
           </h2>
-
-          {/* 
-          <div className={styles.svgZone}>
-            <p className={styles.svgZone__fremont}>Fremont</p>
-
-            <svg
-              viewBox="0 -15 440 160"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              className={styles.svgForCurvedText__soupocalypse}
-            >
-              <path
-                id="curve"
-                d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
-                className={styles.svgForCurvedText__path}
-              />
-              <text width="500">
-                <textPath xlinkHref="#curve">Soupocalypse</textPath>
-              </text>
-            </svg>
-
-            <p className={styles.svgZone__fremont}>Every year, forever</p>
-
-            <svg
-              viewBox="0 -10 440 160"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              className={styles.svgForCurvedText__dates}
-            >
-              <path
-                id="curve"
-                d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
-                className={styles.svgForCurvedText__path}
-              />
-              <text width="500">
-                <textPath xlinkHref="#curve">Every year, forever</textPath>
-              </text>
-            </svg>
-          </div> */}
-          {/* END: Testing different header variations */}
 
           <div className={styles.heroImageWrap}>
             <Image
@@ -356,8 +291,8 @@ export default function Home() {
           During the pandemic in January 2021, Soupocalypse was born. It gave
           the Center of the Universe neighborhood a chance to escape their homes
           and enjoy a warm bowl of soup while taking in the sights and sounds of
-          the Burke-Gilman Trail and the canal’s birds. The experience was so
-          enjoyable that now we celebrate soup every year.
+          the Burke-Gilman Trail and the canal&apos;s birds. The experience was
+          so enjoyable that now we celebrate soup every year.
         </p>
 
         <h2 className={styles.header}>The challenge</h2>
