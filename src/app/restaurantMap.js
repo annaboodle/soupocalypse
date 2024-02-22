@@ -16,25 +16,18 @@ import elCaminoLogo from "../../public/img/logos/ElCamino.jpeg";
 // soup photos
 import mischiefBisqueImg from "../../public/img/mischief/bisque.jpeg";
 import mischiefMasalaImg from "../../public/img/mischief/masala.jpeg";
-
 import kaosamaiTomYumImg from "../../public/img/kaosamai/tom-yum.webp";
 import kaosamaiWonTonImg from "../../public/img/kaosamai/won-ton.webp";
 import kaosamaiTomKhaImg from "../../public/img/kaosamai/tom-kha.webp";
 import kaosamaiDuckNoodleImg from "../../public/img/kaosamai/duck-noodle.webp";
 import kaosamaiGuayTiowTomYumImg from "../../public/img/kaosamai/guay-tiow-tom-yum.webp";
 import kaosamaiGuayTiowVegetarianImg from "../../public/img/kaosamai/guay-tiow-vegetarian.webp";
-
 import elCaminoPozoleVerdeImg from "../../public/img/el-camino/Pozole+Verde.jpg";
 import elCaminoTortillaImg from "../../public/img/el-camino/tortilla-soup.jpeg";
-
 import localTideClamChowderImg from "../../public/img/local-tide/LT+Clam+Chowder.jpeg";
-
 import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
-
 import redStarPozoleImg from "../../public/img/red-star/pozole.jpeg";
-
 import soulGumboImg from "../../public/img/soul/gumbo.webp";
-
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 
 export const restaurantAssets = {
