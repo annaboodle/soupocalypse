@@ -1,4 +1,4 @@
-// File: /Users/anncarroll/Personal/soup-app/src/app/page.js
+// File: /Users/annaboodle/CodeProjects/soupocalypse/src/app/page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

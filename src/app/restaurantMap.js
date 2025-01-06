@@ -12,6 +12,9 @@ import localTideLogo from "../../public/img/logos/local-tide.png";
 import kaosamaiLogo from "../../public/img/logos/kaosamai.jpeg";
 import georgeLogo from "../../public/img/logos/george.jpeg";
 import elCaminoLogo from "../../public/img/logos/ElCamino.jpeg";
+import estersLogo from "../../public/img/logos/esters.png";
+import barrelLogo from "../../public/img/logos/barrel-thief.png";
+import frelardLogo from "../../public/img/logos/frelard-tamales.png";
 
 // soup photos
 import mischiefBisqueImg from "../../public/img/mischief/bisque.jpeg";
@@ -145,5 +148,14 @@ export const restaurantAssets = {
         img: pecadoTortillaImg,
       },
     ],
+  },
+  esters: {
+    logo: estersLogo,
+  },
+  barrel: {
+    logo: barrelLogo,
+  },
+  frelard: {
+    logo: frelardLogo,
   },
 };

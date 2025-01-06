@@ -174,9 +174,8 @@ export default function Home() {
         <div
           className={styles.participant__soupPic}
           style={{
-            backgroundImage: `url(${
-              imgValue !== null ? imgValue.src : imgs[randomIndex].src
-            })`,
+            backgroundImage: `url(${imgValue !== null ? imgValue.src : imgs[randomIndex].src
+              })`,
           }}
         ></div>
         <p className={styles.participant__soupLabel}>{toTitleCase(soup)}</p>
@@ -279,7 +278,7 @@ export default function Home() {
           </div>
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
-            Returning January 2025
+            January 30 – February 2, 2025
           </h2>
 
           <div className={styles.heroImageWrap}>
@@ -297,25 +296,23 @@ export default function Home() {
         <h2 className={styles.header}>A neighborhood tradition</h2>
         <p className={styles.paragraph}>
           During the pandemic in January 2021, Soupocalypse was born. It gave
-          the Center of the Universe neighborhood a chance to escape their homes
+          the Center of the Universe residents a chance to escape their homes
           and enjoy a warm bowl of soup while taking in the sights and sounds of
-          the Burke-Gilman Trail and the canal&apos;s birds. The experience was
-          so enjoyable that now we celebrate soup every year.
+          the Burke-Gilman Trail. The experience was so enjoyable that now we celebrate soup every year.
         </p>
 
         <h2 className={styles.header}>The challenge</h2>
 
         <p className={styles.paragraph}>
           Your mission is to collect 8 Souper Stickers over the course of a mere
-          4 days. Head to any participating restaurants, pick up a soup
-          passport, then earn a sticker every time you order a soup. You can get
-          one stamp per restaurant. Take-out and dine-in soups both count. At
+          4 days. Head to any participating restaurant, pick up a soup
+          passport, then earn a sticker at each restaurant where you order a soup. Take-out and dine-in both count! At
           the end of your quest, turn in your passport at Mischief Distillery to
           earn Super Souper Swag (while supplies last).
         </p>
 
         <p className={styles.paragraph}>
-          Support your soup community, pull on your rain boots and coats, brave
+          Support your community, pull on your rain boots, brave
           the dark, and cozy up to the best soups in the Center of the Universe.
           Do you have what it takes to be a Super Souper?
         </p>
