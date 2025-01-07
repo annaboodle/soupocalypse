@@ -11,6 +11,7 @@ npm run dev
 If you see the 404 page, check the next.config.mjs file. These lines need to be commented out for local development (but they will be necessary when deploying to GitHub Pages):
 
 ```bash
+  output: "export",
   basePath: "/soupocalypse",
   assetPrefix: "/soupocalypse/",
   images: { unoptimized: true },
@@ -20,13 +21,12 @@ Open [http://localhost:3000](http://localhost:3000).
 
 The main pages is located at `app/page.js`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Deploy the app to GitHub Pages
 
 In the next.config.mjs file, make sure these lines are NOT commented out:
 
 ```bash
+  output: "export",
   basePath: "/soupocalypse",
   assetPrefix: "/soupocalypse/",
   images: { unoptimized: true },
@@ -61,6 +61,6 @@ Learning more about Next.js:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [the Next.js GitHub repository](https://github.com/vercel/next.js/)
 
-CircleType (used for the page header):
+CircleType (used for the page header - currently removed due to lack of browser support):
 
 - [the Next.js GitHub repository](https://circletype.labwire.ca/#fitText)
