@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Papa from "papaparse";
 import Slider from "react-slick";
-import CircletypeText from "./circletypeText";
+// import CircletypeText from "./circletypeText";
 import { restaurantAssets } from "./restaurantMap";
 import styles from "./page.module.css";
 
