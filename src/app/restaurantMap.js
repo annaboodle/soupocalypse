@@ -124,12 +124,12 @@ export const restaurantAssets = {
   },
   soul: {
     logo: soulLogo,
-    soups: [
-      {
-        name: "Gumbo",
-        img: soulGumboImg,
-      },
-    ],
+    // soups: [
+    //   {
+    //     name: "Gumbo",
+    //     img: soulGumboImg,
+    //   },
+    // ],
   },
   dreamland: {
     logo: dreamlandLogo,
