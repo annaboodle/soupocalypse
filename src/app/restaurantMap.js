@@ -29,8 +29,10 @@ import elCaminoPozoleVerdeImg from "../../public/img/el-camino/Pozole+Verde.jpg"
 import elCaminoTortillaImg from "../../public/img/el-camino/tortilla-soup.jpeg";
 import localTideClamChowderImg from "../../public/img/local-tide/LT+Clam+Chowder.jpeg";
 import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
-import redStarPozoleImg from "../../public/img/red-star/pozole.jpeg";
-import soulGumboImg from "../../public/img/soul/gumbo.webp";
+import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde.jpeg";
+import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
+import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
+// import soulGumboImg from "../../public/img/soul/gumbo.webp";
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 
 export const restaurantAssets = {
@@ -115,7 +117,11 @@ export const restaurantAssets = {
     soups: [
       {
         name: "Pozole Verde",
-        img: redStarPozoleImg,
+        img: redStarPozoleVerdeImg,
+      },
+      {
+        name: "Pozole Rojo",
+        img: redStarPozoleRojoImg,
       },
     ],
   },
@@ -154,6 +160,12 @@ export const restaurantAssets = {
   },
   barrel: {
     logo: barrelLogo,
+    soups: [
+      {
+        name: "Mulligatawny (vegan and gluten-free)",
+        img: barrelMulligatawnyImg,
+      },
+    ],
   },
   frelard: {
     logo: frelardLogo,

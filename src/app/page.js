@@ -35,13 +35,6 @@ export default function Home() {
     swipeToSlide: true,
   };
 
-  // Helper function to set soups to title case
-  function toTitleCase(str) {
-    return str.replace(/\w\S*/g, function (txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
-  }
-
   // Runs once on page load to get spreadsheet data with Papaparse and load it into data
   useEffect(() => {
     const MASTER_SHEET =
@@ -178,7 +171,7 @@ export default function Home() {
               })`,
           }}
         ></div>
-        <p className={styles.participant__soupLabel}>{toTitleCase(soup)}</p>
+        <p className={styles.participant__soupLabel}>{soup}</p>
       </div>
     );
   };
