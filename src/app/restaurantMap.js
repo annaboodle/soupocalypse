@@ -18,6 +18,11 @@ import frelardLogo from "../../public/img/logos/frelard-tamales.png";
 
 // soup photos
 import mischiefBisqueImg from "../../public/img/mischief/bisque.jpeg";
+import mischiefBisque2Img from "../../public/img/mischief/bisque2.jpg";
+import mischiefChowderImg from "../../public/img/mischief/chowder.jpg";
+import mischiefGumboImg from "../../public/img/mischief/gumbo.jpg";
+import mischiefStewImg from "../../public/img/mischief/sausage-stew.jpg";
+import mischiefDogsImg from "../../public/img/mischief/dogs.jpg";
 import mischiefMasalaImg from "../../public/img/mischief/masala.jpeg";
 import kaosamaiTomYumImg from "../../public/img/kaosamai/tom-yum.webp";
 import kaosamaiWonTonImg from "../../public/img/kaosamai/won-ton.webp";
@@ -32,13 +37,35 @@ import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
 import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde.jpeg";
 import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
 import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
-// import soulGumboImg from "../../public/img/soul/gumbo.webp";
+import dreamlandTasteTestImg from "../../public/img/dreamland/taste-test.png";
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
+// import soulGumboImg from "../../public/img/soul/gumbo.webp";
 
 export const restaurantAssets = {
   mischief: {
     logo: mischiefLogo,
     soups: [
+      {
+        name: "Andouille & Crawfish Gumbo",
+        img: mischiefGumboImg,
+      },
+      {
+        name: "NW Seafood Chowder",
+        img: mischiefChowderImg,
+      },
+      {
+        name: "Sausage & Potato Stew",
+        img: mischiefStewImg,
+      },
+      {
+        name: "Vegan Guajillo & Butternut Bisque",
+        img: mischiefBisque2Img,
+      },
+      {
+        name: "Bone Broth Soup for Dogs!",
+        img: mischiefDogsImg,
+      },
+      // 2024 soups:
       {
         name: "Guajillo Lime Butternut Squash Bisque",
         img: mischiefBisqueImg,
@@ -139,6 +166,12 @@ export const restaurantAssets = {
   },
   dreamland: {
     logo: dreamlandLogo,
+    soups: [
+      {
+        name: "Golden Chicken Curry",
+        img: dreamlandTasteTestImg,
+      },
+    ],
   },
   triangle: {
     logo: triangleLogo,
