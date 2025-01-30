@@ -39,6 +39,8 @@ import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
 import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
 import dreamlandTasteTestImg from "../../public/img/dreamland/taste-test.png";
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
+import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
+import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
 // import soulGumboImg from "../../public/img/soul/gumbo.webp";
 
 export const restaurantAssets = {
@@ -185,6 +187,14 @@ export const restaurantAssets = {
       {
         name: "Chicken tortilla soup",
         img: pecadoTortillaImg,
+      },
+      {
+        name: "Guisada Stew",
+        img: pecadoGuisadaImg,
+      },
+      {
+        name: "Pork Pozole",
+        img: pecadoPozoleImg,
       },
     ],
   },
