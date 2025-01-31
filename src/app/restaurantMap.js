@@ -41,6 +41,7 @@ import dreamlandTasteTestImg from "../../public/img/dreamland/taste-test.png";
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
+import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
 // import soulGumboImg from "../../public/img/soul/gumbo.webp";
 
 export const restaurantAssets = {
@@ -177,6 +178,12 @@ export const restaurantAssets = {
   },
   triangle: {
     logo: triangleLogo,
+    soups: [
+      {
+        name: "Beef Stew",
+        img: triangleBeefStewImg,
+      },
+    ]
   },
   george: {
     logo: georgeLogo,
