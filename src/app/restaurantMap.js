@@ -32,8 +32,10 @@ import kaosamaiGuayTiowTomYumImg from "../../public/img/kaosamai/guay-tiow-tom-y
 import kaosamaiGuayTiowVegetarianImg from "../../public/img/kaosamai/guay-tiow-vegetarian.webp";
 import elCaminoPozoleVerdeImg from "../../public/img/el-camino/Pozole+Verde.jpg";
 import elCaminoTortillaImg from "../../public/img/el-camino/tortilla-soup.jpeg";
+import elCaminoButternutImg from "../../public/img/el-camino/butternut.jpg";
 import localTideClamChowderImg from "../../public/img/local-tide/LT+Clam+Chowder.jpeg";
 import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
+import shawnMulligatawnyImg from "../../public/img/shawn/mulligatawny.jpg";
 import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde.jpeg";
 import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
 import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
@@ -42,7 +44,12 @@ import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
 import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
+import triangleCreamOfMushroomImg from "../../public/img/triangle/cream-of-mushroom.jpg";
+import frelardPorkPozole from "../../public/img/frelard/pozole.jpg";
+
 // import soulGumboImg from "../../public/img/soul/gumbo.webp";
+
+
 
 export const restaurantAssets = {
   mischief: {
@@ -112,11 +119,15 @@ export const restaurantAssets = {
     logo: elCaminoLogo,
     soups: [
       {
-        name: "Pozole verde",
+        name: "Butternut Squash and Potato Soup",
+        img: elCaminoButternutImg,
+      },
+      {
+        name: "Pozole Verde",
         img: elCaminoPozoleVerdeImg,
       },
       {
-        name: "Tortilla soup",
+        name: "Tortilla Soup",
         img: elCaminoTortillaImg,
       },
     ],
@@ -133,6 +144,10 @@ export const restaurantAssets = {
   shawn: {
     logo: shawnLogo,
     soups: [
+      {
+        name: "Mulligatawny",
+        img: shawnMulligatawnyImg,
+      },
       {
         name: "Clam chowder",
         img: shawnClamChowderImg,
@@ -183,6 +198,10 @@ export const restaurantAssets = {
         name: "Beef Stew",
         img: triangleBeefStewImg,
       },
+      {
+        name: "Cream of Mushroom",
+        img: triangleCreamOfMushroomImg,
+      },
     ]
   },
   george: {
@@ -219,5 +238,11 @@ export const restaurantAssets = {
   },
   frelard: {
     logo: frelardLogo,
+    soups: [
+      {
+        name: "Pork Pozole",
+        img: frelardPorkPozole,
+      },
+    ],
   },
 };
