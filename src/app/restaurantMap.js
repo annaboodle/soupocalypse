@@ -45,11 +45,9 @@ import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
 import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
 import triangleCreamOfMushroomImg from "../../public/img/triangle/cream-of-mushroom.jpg";
-import frelardPorkPozole from "../../public/img/frelard/pozole.jpg";
-
+import frelardPorkPozoleImg from "../../public/img/frelard/pozole.jpg";
+import estersChantrelleImg from "../../public/img/esters/chantrelle.jpg";
 // import soulGumboImg from "../../public/img/soul/gumbo.webp";
-
-
 
 export const restaurantAssets = {
   mischief: {
@@ -226,6 +224,12 @@ export const restaurantAssets = {
   },
   esters: {
     logo: estersLogo,
+    soups: [
+      {
+        name: "Cream of Chantrelle",
+        img: estersChantrelleImg,
+      },
+    ],
   },
   barrel: {
     logo: barrelLogo,
@@ -241,7 +245,7 @@ export const restaurantAssets = {
     soups: [
       {
         name: "Pork Pozole",
-        img: frelardPorkPozole,
+        img: frelardPorkPozoleImg,
       },
     ],
   },
