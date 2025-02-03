@@ -271,7 +271,7 @@ export default function Home() {
           </div>
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
-            January 30 – February 2, 2025
+            Returning January 2026
           </h2>
 
           <div className={styles.heroImageWrap}>
@@ -286,13 +286,6 @@ export default function Home() {
 
       {/* tan bottom section */}
       <div className={styles.section2}>
-        <h2 className={styles.header}>A neighborhood tradition</h2>
-        <p className={styles.paragraph}>
-          During the pandemic in January 2021, Soupocalypse was born. It gave
-          the Center of the Universe residents a chance to escape their homes
-          and enjoy a warm bowl of soup while taking in the sights and sounds of
-          the Burke-Gilman Trail. The experience was so enjoyable that now we celebrate soup every year.
-        </p>
 
         <h2 className={styles.header}>The challenge</h2>
 
@@ -305,7 +298,7 @@ export default function Home() {
         </p>
 
         <p className={styles.paragraph}>
-          Support your community, pull on your rain boots, brave
+          Support your community, brave
           the dark, and cozy up to the best soups in the Center of the Universe.
           Do you have what it takes to be a Super Souper?
         </p>
@@ -328,11 +321,19 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <h2 className={styles.header}>Godspeed super soupers</h2>
+        <h2 className={styles.header}>A neighborhood tradition</h2>
 
         <p className={styles.paragraph}>
-          Remember: it&apos;s not the end of the world until we run out of soup!
+          Soupocalypse was born during the pandemic in January 2021. Fremont residents welcomed the opportunity to escape their homes, support local restaurants, and enjoy delicious soups. The experience was so enjoyable that now we celebrate soup every year.
+
         </p>
+
+        <p className={styles.paragraph}>
+          As we like to say, it&apos;s not the end of the world <u>until we run out of soup!</u>
+        </p>
+
+        <h2 className={styles.header}>Godspeed super soupers</h2>
+
       </div>
       <p className={styles.footer}>
         Made by <a href="https://annabethcarroll.com/">ABC</a> for the love of
