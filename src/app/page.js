@@ -142,7 +142,7 @@ export default function Home() {
   const imgs = [soup1, soup2, soup3, soup4, soup5, soup6, soup7, soup8];
 
   // Function to render a single soup item
-  const renderSoupItem = (soup, restaurantAssetsForThisRestaurant, imgs) => {
+  const renderSoupItem = (soup, restaurantAssetsForThisRestaurant, imgs, key) => {
     // Function to get image URL by soup name
     function getImgByName(restaurantData, inputString) {
       const sanitizedInput = inputString.toLowerCase().replace(/\s/g, "");
@@ -163,7 +163,7 @@ export default function Home() {
 
     // Return JSX for the soup item
     return (
-      <div className={styles.participant__soup}>
+      <div key={key} className={styles.participant__soup}>
         <div
           className={styles.participant__soupPic}
           style={{
@@ -198,13 +198,13 @@ export default function Home() {
               className={styles.participant__soupsWrapper}
             >
               {/* Render each soup item */}
-              {soupsArray.map((soup, index) =>
-                renderSoupItem(soup, restaurantAssetsForThisRestaurant, imgs)
+              {soupsArray.map((soup, soupIndex) =>
+                renderSoupItem(soup, restaurantAssetsForThisRestaurant, imgs, `${restaurant}-${soupIndex}-${soup.trim()}`)
               )}
             </Slider>
           ) : (
-            soupsArray.map((soup, index) =>
-              renderSoupItem(soup, restaurantAssetsForThisRestaurant, imgs)
+            soupsArray.map((soup, soupIndex) =>
+              renderSoupItem(soup, restaurantAssetsForThisRestaurant, imgs, `${restaurant}-${soupIndex}-${soup.trim()}`)
             )
           )}
 
@@ -327,10 +327,10 @@ export default function Home() {
             width="640"
             height="480"
             className={styles.mapIframe}
-            zoom={21}
-            allowFullScreen=""
+            title="Soupocalypse map"
             loading="lazy"
-          ></iframe>
+            allowFullScreen
+          />
         </div>
 
         <div className={styles.headerBox}>
