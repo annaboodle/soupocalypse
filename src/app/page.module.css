@@ -222,22 +222,47 @@
 }
 
 /* section headers with the fancy star decorations */
-.header {
+.headerBox {
   color: var(--tan);
-  text-transform: uppercase;
   text-shadow: var(--drop-shadow);
   background: var(--red);
-  padding: 10px 20px;
   font-family: var(--header-font);
-  font-size: 5.5vw;
   display: block;
   text-align: center;
   margin: 80px auto 25px;
-  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
-.header:before,
-.header:after {
+.headerBoxInner {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    padding-bottom: 0;
+  }
+
+  .subheader {
+    margin: 0;
+  }
+}
+
+/* just the text */
+.header {
+  font-size: 5.5vw;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.subheader {
+  font-size: 4vw;
+  padding: 0 20px 15px;
+}
+
+.headerBox:before,
+.headerBox:after {
   content: "";
   background: url(../../public/img/star.svg);
   display: inline-block;
@@ -257,28 +282,32 @@
 }
 
 @media only screen and (max-width: 765px) {
-  .header {
-    font-size: 45px;
+  .headerBox {
     position: relative;
     padding: 10px 70px;
     width: calc(100% + 40px);
     left: -20px;
     margin-top: 40px;
+    justify-content: center;
   }
 
-  .header:before,
-  .header:after {
+  .header {
+    font-size: 45px;
+  }
+
+  .headerBox:before,
+  .headerBox:after {
     display: block;
     position: absolute;
     top: calc(50% - 24px);
     margin: 0 0 3px;
   }
 
-  .header:before {
+  .headerBox:before {
     left: 13px;
   }
 
-  .header:after {
+  .headerBox:after {
     right: 13px;
   }
 
@@ -298,6 +327,7 @@
   left: 0;
   margin: 0 0 30px;
   font-size: 4.7vw;
+  justify-content: center;
 }
 
 /* container for all participant items */

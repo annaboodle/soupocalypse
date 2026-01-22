@@ -270,9 +270,11 @@ export default function Home() {
             <p className={styles.bottomHeader}>{tagline}</p>
           </div>
 
-          <h2 className={`${styles.header} ${styles.headerDate}`}>
-            JAN 29 – FEB 1, 2026
-          </h2>
+          <div className={`${styles.headerBox} ${styles.headerDate}`}>
+            <h2 className={`${styles.header}`}>
+              JAN 29 – FEB 1, 2026
+            </h2>
+          </div>
 
           <div className={styles.heroImageWrap}>
             <Image
@@ -287,7 +289,9 @@ export default function Home() {
       {/* tan bottom section */}
       <div className={styles.section2}>
 
-        <h2 className={styles.header}>The challenge</h2>
+        <div className={styles.headerBox}>
+          <h2 className={styles.header}>The challenge</h2>
+        </div>
 
         <p className={styles.paragraph}>
           Your mission is to collect 8 Souper Stickers over the course of a mere
@@ -303,11 +307,19 @@ export default function Home() {
           Do you have what it takes to be a Super Souper?
         </p>
 
-        <h2 className={styles.header}>The soups</h2>
+
+        <div className={styles.headerBox}>
+          <div className={styles.headerBoxInner}>
+            <h2 className={styles.header}>Last year's soups</h2>
+            <p className={styles.subheader}>2026 soups coming soon!</p>
+          </div>
+        </div>
 
         <div className={styles.participantList}>{soupParticipantItems}</div>
 
-        <h2 className={styles.header}>Plan your route</h2>
+        <div className={styles.headerBox}>
+          <h2 className={styles.header}>Plan your route</h2>
+        </div>
 
         <div className={styles.mapIframeWrapper}>
           <iframe
@@ -321,24 +333,27 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <h2 className={styles.header}>A neighborhood tradition</h2>
+        <div className={styles.headerBox}>
+          <h2 className={styles.header}>A neighborhood tradition</h2>
+        </div>
 
         <p className={styles.paragraph}>
           Soupocalypse was born during the pandemic in January 2021. Fremont residents welcomed the opportunity to escape their homes, support local restaurants, and enjoy delicious soups. The experience was so enjoyable that now we celebrate soup every year.
-
         </p>
 
         <p className={styles.paragraph}>
           As we like to say, it&apos;s not the end of the world... <b><i>until we run out of soup!</i></b>
         </p>
 
-        <h2 className={styles.header}>Godspeed super soupers</h2>
+        <div className={styles.headerBox}>
+          <h2 className={styles.header}>Godspeed super soupers</h2>
+        </div>
 
       </div>
       <p className={styles.footer}>
         Made by <a href="https://annabethcarroll.com/">ABC</a> for the love of
         the soup ❤️
       </p>
-    </main>
+    </main >
   );
 }
