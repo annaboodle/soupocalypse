@@ -4,7 +4,7 @@
   --red: #c72824;
   --green: #2d3a1f;
   --header-font: "League Gothic", sans-serif;
-  --body-font: "Kanit", sans-serif;
+  --body-font: "Merriweather Sans", sans-serif;
   --drop-shadow: 5px 5px 0px var(--green);
   cursor: url("../../public/img/cursor.cur"), auto;
 }

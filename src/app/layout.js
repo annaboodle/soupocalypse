@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=League+Gothic&display=swap"
+          href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
           rel="stylesheet"
         />
       </head>

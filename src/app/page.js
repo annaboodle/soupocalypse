@@ -271,7 +271,7 @@ export default function Home() {
           </div>
 
           <h2 className={`${styles.header} ${styles.headerDate}`}>
-            Returning January 2026
+            JAN 29 – FEB 1, 2026
           </h2>
 
           <div className={styles.heroImageWrap}>
@@ -293,7 +293,7 @@ export default function Home() {
           Your mission is to collect 8 Souper Stickers over the course of a mere
           4 days. Head to any participating restaurant, pick up a soup
           passport, then earn a sticker at each restaurant where you order a soup. Take-out and dine-in both count! At
-          the end of your quest, turn in your passport at Mischief Distillery to
+          the end of your quest, turn in your passport at Triangle Spirits to
           earn Super Souper Swag (while supplies last).
         </p>
 
@@ -329,7 +329,7 @@ export default function Home() {
         </p>
 
         <p className={styles.paragraph}>
-          As we like to say, it&apos;s not the end of the world <u>until we run out of soup!</u>
+          As we like to say, it&apos;s not the end of the world... <b><i>until we run out of soup!</i></b>
         </p>
 
         <h2 className={styles.header}>Godspeed super soupers</h2>

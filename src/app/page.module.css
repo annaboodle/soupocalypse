@@ -8,6 +8,7 @@
 
 .paragraph {
   font-size: 20px;
+  line-height: 1.7;
 }
 
 /* top section with title and godzilla */
@@ -313,6 +314,7 @@
 .participant__restaurantInfo {
   text-align: center;
   padding: 45px 0 0;
+  line-height: 1.7;
 }
 
 /* each individual restaurant + soup card */
@@ -347,11 +349,12 @@
   margin: 0 0 8px;
   text-transform: uppercase;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .participant__restaurantInfoItem {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
 }
 

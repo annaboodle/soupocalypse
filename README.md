@@ -8,31 +8,13 @@ First, run the development server:
 npm run dev
 ```
 
-If you see the 404 page, check the next.config.mjs file. These lines need to be commented out for local development (but they will be necessary when deploying to GitHub Pages):
-
-```bash
-  output: "export",
-  basePath: "/soupocalypse",
-  assetPrefix: "/soupocalypse/",
-  images: { unoptimized: true },
-```
-
-Open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:3000](http://localhost:3000).
 
 The main pages is located at `app/page.js`.
 
-## Deploy the app to GitHub Pages
+## Hosting on a custom domain (AKA: soupocalypse.com)
 
-In the next.config.mjs file, make sure these lines are NOT commented out:
-
-```bash
-  output: "export",
-  basePath: "/soupocalypse",
-  assetPrefix: "/soupocalypse/",
-  images: { unoptimized: true },
-```
-
-Then build the app, commit and push changes:
+Build the app, commit and push changes:
 
 ```bash
 git checkout main
@@ -47,6 +29,28 @@ git push
 ```
 
 The next.js [GitHub Action](https://github.com/annaboodle/soupocalypse/actions) will run automatically and deploy the changes to the live site.
+
+## Hosting on GitHub Pages (not currently the case as of 1/21/26)
+
+If the site is NOT hooked up to a custom domain and you see the 404 page, check the next.config.mjs file. There are some lines that need to be commented out for local development, but they will be necessary for hosting on GitHub Pages. 
+
+### Local development
+
+In the next.config.mjs file, comment these out:
+
+```bash
+  basePath: "/soupocalypse",
+  assetPrefix: "/soupocalypse/",
+```
+
+## Deploy the app to GitHub Pages
+
+In the next.config.mjs file, make sure these lines are NOT commented out:
+
+```bash
+  basePath: "/soupocalypse",
+  assetPrefix: "/soupocalypse/",
+```
 
 ## Helpful resources
 
