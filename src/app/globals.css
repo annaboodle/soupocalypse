@@ -3,8 +3,8 @@
   --tan: #dfc08a;
   --red: #c72824;
   --green: #2d3a1f;
-  --header-font: "League Gothic", sans-serif;
-  --body-font: "Merriweather Sans", sans-serif;
+  --header-font: var(--font-league);
+  --body-font: var(--font-merriweather-sans);
   --drop-shadow: 5px 5px 0px var(--green);
   cursor: url("../../public/img/cursor.cur"), auto;
 }
