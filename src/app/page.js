@@ -310,7 +310,7 @@ export default function Home() {
 
         <div className={styles.headerBox}>
           <div className={styles.headerBoxInner}>
-            <h2 className={styles.header}>Last year's soups</h2>
+            <h2 className={styles.header}>Last year&apos;s soups</h2>
             <p className={styles.subheader}>2026 soups coming soon!</p>
           </div>
         </div>
