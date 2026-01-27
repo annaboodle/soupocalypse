@@ -1,5 +1,6 @@
 // restaurant logos
-import mischiefLogo from "../../public/img/logos/mischief.png";
+// import mischiefLogo from "../../public/img/logos/mischief.png";
+import fremontSocialLogo from "../../public/img/logos/fremont-social.png";
 import dreamlandLogo from "../../public/img/logos/dreamland.png";
 import triangleLogo from "../../public/img/logos/triangle.png";
 import swelLogo from "../../public/img/logos/swel.png";
@@ -39,10 +40,12 @@ import shawnMulligatawnyImg from "../../public/img/shawn/mulligatawny.jpg";
 import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde.jpeg";
 import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
 import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
+import barrelBuddhaImg from "../../public/img/barrel-thief/buddha.jpg";
 import dreamlandTasteTestImg from "../../public/img/dreamland/taste-test.png";
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
+import pecadoPoblanoImg from "../../public/img/pecado/poblano.jpg";
 import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
 import triangleCreamOfMushroomImg from "../../public/img/triangle/cream-of-mushroom.jpg";
 import frelardPorkPozoleImg from "../../public/img/frelard/pozole.jpg";
@@ -51,7 +54,7 @@ import estersChantrelleImg from "../../public/img/esters/chantrelle.jpg";
 
 export const restaurantAssets = {
   mischief: {
-    logo: mischiefLogo,
+    logo: fremontSocialLogo,
     soups: [
       {
         name: "Andouille & Crawfish Gumbo",
@@ -73,7 +76,7 @@ export const restaurantAssets = {
         name: "Bone Broth Soup for Dogs!",
         img: mischiefDogsImg,
       },
-      // 2024 soups:
+      // past soups:
       {
         name: "Guajillo Lime Butternut Squash Bisque",
         img: mischiefBisqueImg,
@@ -213,6 +216,11 @@ export const restaurantAssets = {
         img: pecadoTortillaImg,
       },
       {
+        name: "Roasted Poblano (Vegetarian)",
+        img: pecadoPoblanoImg,
+      },
+      // past soups:
+      {
         name: "Guisada Stew",
         img: pecadoGuisadaImg,
       },
@@ -234,6 +242,11 @@ export const restaurantAssets = {
   barrel: {
     logo: barrelLogo,
     soups: [
+      {
+        name: "Buddha Bowl Soup",
+        img: barrelBuddhaImg,
+      },
+      // past soups:
       {
         name: "Mulligatawny (vegan and gluten-free)",
         img: barrelMulligatawnyImg,
