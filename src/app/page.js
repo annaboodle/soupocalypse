@@ -307,13 +307,15 @@ export default function Home() {
           Do you have what it takes to be a Super Souper?
         </p>
 
-
         <div className={styles.headerBox}>
+          <h2 className={styles.header}>The soups</h2>
+        </div>
+        {/* <div className={styles.headerBox}>
           <div className={styles.headerBoxInner}>
             <h2 className={styles.header}>Last year&apos;s soups</h2>
             <p className={styles.subheader}>2026 soups coming soon!</p>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.participantList}>{soupParticipantItems}</div>
 

@@ -46,7 +46,7 @@ import localTideClamChowderImg from "../../public/img/local-tide/LT+Clam+Chowder
 import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
 import shawnMulligatawnyImg from "../../public/img/shawn/mulligatawny.jpg";
 
-import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde.jpeg";
+import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde-2.jpeg";
 import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
 
 import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
