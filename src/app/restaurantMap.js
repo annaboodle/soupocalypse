@@ -25,37 +25,69 @@ import mischiefGumboImg from "../../public/img/mischief/gumbo.jpg";
 import mischiefStewImg from "../../public/img/mischief/sausage-stew.jpg";
 import mischiefDogsImg from "../../public/img/mischief/dogs.jpg";
 import mischiefMasalaImg from "../../public/img/mischief/masala.jpeg";
+import mischiefPozoleImg from "../../public/img/mischief/pozole.jpeg";
+import mischiefFrenchOnionImg from "../../public/img/mischief/french-onion.jpeg";
+import mischiefPorkKimchiImg from "../../public/img/mischief/pork-kimchi.jpeg";
+import mischiefTurkeySwissImg from "../../public/img/mischief/turkey-swiss.jpeg";
+
 import kaosamaiTomYumImg from "../../public/img/kaosamai/tom-yum.webp";
 import kaosamaiWonTonImg from "../../public/img/kaosamai/won-ton.webp";
 import kaosamaiTomKhaImg from "../../public/img/kaosamai/tom-kha.webp";
 import kaosamaiDuckNoodleImg from "../../public/img/kaosamai/duck-noodle.webp";
 import kaosamaiGuayTiowTomYumImg from "../../public/img/kaosamai/guay-tiow-tom-yum.webp";
 import kaosamaiGuayTiowVegetarianImg from "../../public/img/kaosamai/guay-tiow-vegetarian.webp";
+
 import elCaminoPozoleVerdeImg from "../../public/img/el-camino/Pozole+Verde.jpg";
 import elCaminoTortillaImg from "../../public/img/el-camino/tortilla-soup.jpeg";
 import elCaminoButternutImg from "../../public/img/el-camino/butternut.jpg";
+
 import localTideClamChowderImg from "../../public/img/local-tide/LT+Clam+Chowder.jpeg";
+
 import shawnClamChowderImg from "../../public/img/shawn/clam-chowder.jpeg";
 import shawnMulligatawnyImg from "../../public/img/shawn/mulligatawny.jpg";
+
 import redStarPozoleVerdeImg from "../../public/img/red-star/pozole-verde.jpeg";
 import redStarPozoleRojoImg from "../../public/img/red-star/pozole-rojo.jpg";
+
 import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jpg";
 import barrelBuddhaImg from "../../public/img/barrel-thief/buddha.jpg";
+
 import dreamlandTasteTestImg from "../../public/img/dreamland/taste-test.png";
+
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
 import pecadoPoblanoImg from "../../public/img/pecado/poblano.jpg";
+
 import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
 import triangleCreamOfMushroomImg from "../../public/img/triangle/cream-of-mushroom.jpg";
+
 import frelardPorkPozoleImg from "../../public/img/frelard/pozole.jpg";
+
 import estersChantrelleImg from "../../public/img/esters/chantrelle.jpg";
+
+import swelTomatoImg from "../../public/img/swel/tomato.jpg";
+
 // import soulGumboImg from "../../public/img/soul/gumbo.webp";
 
 export const restaurantAssets = {
   mischief: {
     logo: fremontSocialLogo,
     soups: [
+      {
+        name: "Pozole",
+        img: mischiefPozoleImg,
+      }, {
+        name: "French Onion",
+        img: mischiefFrenchOnionImg,
+      }, {
+        name: "Pork Kimchi",
+        img: mischiefPorkKimchiImg,
+      }, {
+        name: "Turkey Swiss",
+        img: mischiefTurkeySwissImg,
+      },
+      // past soups:
       {
         name: "Andouille & Crawfish Gumbo",
         img: mischiefGumboImg,
@@ -173,6 +205,12 @@ export const restaurantAssets = {
   },
   swel: {
     logo: swelLogo,
+    soups: [
+      {
+        name: "Spicy Tomato Basil Soup with Tillamook Grilled Cheese",
+        img: swelTomatoImg,
+      },
+    ],
   },
   soul: {
     logo: soulLogo,
