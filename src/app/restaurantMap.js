@@ -73,7 +73,7 @@ import estersChantrelleImg from "../../public/img/esters/chantrelle.jpg";
 
 import swelTomatoImg from "../../public/img/swel/tomato.jpg";
 
-// import soulGumboImg from "../../public/img/soul/gumbo.webp";
+import soulGumboImg from "../../public/img/soul/gumbo.jpeg";
 
 export const restaurantAssets = {
   mischief: {
@@ -229,12 +229,12 @@ export const restaurantAssets = {
   },
   soul: {
     logo: soulLogo,
-    // soups: [
-    //   {
-    //     name: "Gumbo",
-    //     img: soulGumboImg,
-    //   },
-    // ],
+    soups: [
+      {
+        name: "Gumbo",
+        img: soulGumboImg,
+      },
+    ],
   },
   dreamland: {
     logo: dreamlandLogo,
