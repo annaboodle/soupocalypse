@@ -59,8 +59,13 @@ import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
 import pecadoPoblanoImg from "../../public/img/pecado/poblano.jpg";
 
+import paseoVegetableImg from "../../public/img/paseo/vegetable-soup.jpg";
+import paseoChickenImg from "../../public/img/paseo/chicken-soup.jpg";
+
 import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
 import triangleCreamOfMushroomImg from "../../public/img/triangle/cream-of-mushroom.jpg";
+import triangleBrunswickImg from "../../public/img/triangle/brunswick.jpeg";
+import triangleCarrotGingerImg from "../../public/img/triangle/carrot-ginger.jpeg";
 
 import frelardPorkPozoleImg from "../../public/img/frelard/pozole.jpg";
 
@@ -189,6 +194,16 @@ export const restaurantAssets = {
   },
   paseo: {
     logo: paseoLogo,
+    soups: [
+      {
+        name: "Vegetable Soup with Rice",
+        img: paseoVegetableImg,
+      },
+      {
+        name: "Chicken Soup",
+        img: paseoChickenImg,
+      },
+    ],
   },
   redStar: {
     logo: redStarLogo,
@@ -233,6 +248,15 @@ export const restaurantAssets = {
   triangle: {
     logo: triangleLogo,
     soups: [
+      {
+        name: "Brunswick Stew (Gluten-Free)",
+        img: triangleBrunswickImg,
+      },
+      {
+        name: "Carrot Ginger (Vegan & Gluten-Free)",
+        img: triangleCarrotGingerImg,
+      },
+      // past soups: 
       {
         name: "Beef Stew",
         img: triangleBeefStewImg,
