@@ -53,6 +53,10 @@ import barrelMulligatawnyImg from "../../public/img/barrel-thief/mulligatawny.jp
 import barrelBuddhaImg from "../../public/img/barrel-thief/buddha.jpg";
 
 import dreamlandTasteTestImg from "../../public/img/dreamland/taste-test.png";
+import dreamlandChickenCurryImg from "../../public/img/dreamland/chicken-curry.jpg";
+import dreamlandGuajilloChickenImg from "../../public/img/dreamland/guajillo-chicken.jpg";
+import dreamlandSeafoodChowderImg from "../../public/img/dreamland/seafood-chowder.jpg";
+import dreamlandTomatoBasilImg from "../../public/img/dreamland/tomato-basil.jpg";
 
 import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
@@ -240,6 +244,24 @@ export const restaurantAssets = {
   dreamland: {
     logo: dreamlandLogo,
     soups: [
+      {
+        name: "Hot Girl Soup (Chicken Curry with Rice)",
+        img: dreamlandChickenCurryImg,
+      },
+      {
+        name: "Guajillo Chicken and Vegetable",
+        img: dreamlandGuajilloChickenImg,
+      },
+      {
+        name: "Seafood Chowder",
+        img: dreamlandSeafoodChowderImg,
+      },
+      {
+        name: "Vegan Tomato Basil",
+        img: dreamlandTomatoBasilImg,
+      },
+
+      // past soups:
       {
         name: "Golden Chicken Curry",
         img: dreamlandTasteTestImg,
