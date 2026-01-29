@@ -66,6 +66,7 @@ import triangleBeefStewImg from "../../public/img/triangle/beef-stew.jpg";
 import triangleCreamOfMushroomImg from "../../public/img/triangle/cream-of-mushroom.jpg";
 import triangleBrunswickImg from "../../public/img/triangle/brunswick.jpeg";
 import triangleCarrotGingerImg from "../../public/img/triangle/carrot-ginger.jpeg";
+import triangleGumboImg from "../../public/img/triangle/gumbo.jpg";
 
 import frelardPorkPozoleImg from "../../public/img/frelard/pozole.jpg";
 
@@ -248,6 +249,10 @@ export const restaurantAssets = {
   triangle: {
     logo: triangleLogo,
     soups: [
+      {
+        name: "Chicken & Andouille Gumbo",
+        img: triangleGumboImg,
+      },
       {
         name: "Brunswick Stew (Gluten-Free)",
         img: triangleBrunswickImg,
