@@ -62,6 +62,7 @@ import pecadoTortillaImg from "../../public/img/pecado/chicken-tortilla.jpeg";
 import pecadoGuisadaImg from "../../public/img/pecado/guisada.jpg";
 import pecadoPozoleImg from "../../public/img/pecado/pozole.jpg";
 import pecadoPoblanoImg from "../../public/img/pecado/poblano.jpg";
+import pecadoBisqueImg from "../../public/img/pecado/mexican-tomato-bisque.png";
 
 import paseoVegetableImg from "../../public/img/paseo/vegetable-soup.jpg";
 import paseoChickenImg from "../../public/img/paseo/chicken-soup.jpg";
@@ -303,6 +304,10 @@ export const restaurantAssets = {
       {
         name: "Chicken tortilla soup",
         img: pecadoTortillaImg,
+      },
+      {
+        name: "Mexican Tomato Bisque",
+        img: pecadoBisqueImg,
       },
       {
         name: "Roasted Poblano (Vegetarian)",
